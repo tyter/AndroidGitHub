@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/setting"
+    android:title="@string/setting"
+    android:icon="@drawable/ic_setting"/>
+
+  <item
+    android:id="@+id/feedback"
+    android:title="@string/feedback"
+    android:icon="@drawable/ic_feedback"/>
+
+  <item
+    android:id="@+id/bonus"
+    android:title="@string/bonus"
+    android:icon="@drawable/ic_photo"/>
+</menu>

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">AndroidGitHub</string>
+    <string name="search_btn_text">搜索</string>
+    <string name="search_hint">请输入你要搜索的关键字</string>
+
+    <string name="repo_name">仓库名称:</string>
+    <string name="repo_des">仓库描述:</string>
+    <string name="user_name">用户名称:</string>
+
+    <string name="bonus">福利</string>
+    <string name="setting">设置</string>
+    <string name="feedback">建议</string>
+
+    <string name="updated_seconds">刚刚更新</string>
+    <string name="updated">更新于</string>
+    <string name="year">年</string>
+    <string name="month">个月</string>
+    <string name="day">日</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="before">前</string>
 </resources>

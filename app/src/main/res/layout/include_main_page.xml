@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffff">
+
+  <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/tool_bar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:layout_scrollFlags="scroll|enterAlways|snap"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:orientation="horizontal"
+      android:paddingLeft="12dp"
+      android:paddingRight="12dp"
+      android:paddingTop="16dp">
+
+      <EditText
+        android:id="@+id/et_search_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/ic_search"
+        android:hint="@string/search_hint"
+        android:imeOptions="actionSearch"
+        android:background="@drawable/bg_edit_normal"
+        android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv_list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#55ffffff">
+
+    </android.support.v7.widget.RecyclerView>
+
+  </LinearLayout>
+
+  <include layout="@layout/layout_loading_progress"/>
+
+</android.support.design.widget.CoordinatorLayout>

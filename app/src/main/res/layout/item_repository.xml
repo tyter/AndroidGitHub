@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="10dp"
+  app:cardCornerRadius="5dp"
+  app:cardUseCompatPadding="true">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginBottom="5dp">
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_user_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        app:viewAspectRatio="1"
+        app:placeholderImage="@drawable/ic_android"
+        app:roundAsCircle="true"
+        app:roundedCornerRadius="20dp"/>
+
+      <TextView
+        android:id="@+id/tv_repo_name"
+        style="@style/repo_title_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_user_logo"
+        android:ellipsize="end"
+        android:maxLength="32"
+        android:maxLines="1"
+        tools:text="aaaaa"/>
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_repo_action"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        app:viewAspectRatio="1"
+        app:placeholderImage="@drawable/ic_menu_gray"/>
+
+    </RelativeLayout>
+
+    <TextView
+      android:id="@+id/tv_repo_des"
+      style="@style/repo_content_text_style"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:maxLength="1024"
+      android:ellipsize="end"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="20dp"
+      tools:text="fffff"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        style="@style/repo_footer_text_style"
+        tools:text="ttttt"/>
+
+      <ImageView
+        android:id="@+id/iv_star_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_language"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_star_gray" />
+
+      <TextView
+        android:id="@+id/tv_star_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/iv_star_image"
+        android:layout_alignParentBottom="true"
+        style="@style/repo_footer_text_style"/>
+
+      <ImageView
+        android:id="@+id/tv_fork_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_star_count"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_fork_gray"/>
+
+      <TextView
+        android:id="@+id/tv_fork_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/tv_fork_image"
+        android:layout_alignParentBottom="true"
+        style="@style/repo_footer_text_style"/>
+
+      <TextView
+        android:id="@+id/tv_update_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="@style/repo_footer_text_style"/>
+    </RelativeLayout>
+  </LinearLayout>
+</android.support.v7.widget.CardView>
